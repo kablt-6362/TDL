@@ -40,11 +40,6 @@ SELECT*FROM review INNER JOIN user
 ON review.user_id = user.id
 WHERE user.id = 1; 
 
--- 특정 사용자가 작성한 review 검색(user_id: 1~5)
-SELECT*FROM review rv INNER JOIN user us
-ON rv.user_id = us.id
-WHERE us.id=1;
-
 -- 특정 가게에 달린 리뷰 검색  (버거킹,맥도날드,남도횟집)
 SELECT*FROM review re INNER JOIN store st
 ON re.store_id = st.id
